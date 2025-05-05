@@ -1,0 +1,66 @@
+# 📦 Use of Containers in Cloud Native
+The journey of application development has always been closely tied to how we **package** and **deploy** software — and `containers` are the latest leap in that evolution 🚀.
+
+## 🐍 Example: A Simple C# Web App
+Let’s say I’ve built a small web app in C#. To run it, I’d typically need:
+
+    🖥️ A base operating system.
+
+    🐍 C# and .NET Core packages installed.
+
+    📦 Additional libraries (e.g., Dapper, EF Core).
+
+    🌐 Networking set up.
+
+    🗄️ Connections to databases, caches, or storage systems.
+
+Traditionally, **system administrators** would set up the environment to meet all these requirements — which can be:
+* ❗ Error-prone
+* 🔁 Time-consuming
+* 📉 Hard to maintain
+
+So, servers were usually set up for one specific purpose, like running just a `database` or `app server`, and then connected over the network.
+
+## 🧮 Enter: Virtual Machines (VMs)
+To make better use of hardware, **Virtual Machines** came into play:
+
+* Emulate a full computer (`OS`, `CPU`, `RAM`, etc.)
+
+* Allow multiple isolated environments on the same server
+
+* Great for running different apps side-by-side
+
+But VMs have a downside:
+* ⚠️ They’re heavyweight — each one needs its own full OS kernel, which adds overhead.
+* 🐳 The Container Revolution
+
+`Containers` solve both major problems:
+* ✅ Package the app + all dependencies into one portable unit
+
+* ⚡ Run more efficiently than VMs — no need for a full **OS** per app
+
+`Containers` share the host `OS kernel` but remain isolated, making them:
+* 🪶 Lightweight
+
+* 🔄 Easy to replicate
+
+* 🚚 Portable across environments (dev, staging, prod)
+
+## 🧰 Why Containers Matter
+Containers make it easier for developers to:
+
+* Define their app’s **environment** in a `single container image`.
+
+* Ensure **consistency** across machines
+
+* Focus on writing code, not configuring servers
+
+And for operations teams, containers mean:
+
+* More **efficient** resource usage 💰
+
+* Easier **updates** and **rollbacks** 🔄
+
+* Simpler scaling ⚖️
+
+By using **containers**, I can **build**, **ship**, and **run** my applications anywhere, with confidence and consistency 🌍.
